@@ -66,7 +66,7 @@ func play_animation(prefix: String, dir: Vector2) -> void:
 func attack() -> void:
 	is_attacking = true
 	swing_sword.play()
-	play_animation("attack", last_direction)
+	play_animation("attack", last_direction) 
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if is_attacking:
